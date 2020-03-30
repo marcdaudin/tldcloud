@@ -13,6 +13,7 @@
     <module>jobs/process/testcloudrun_0.1</module>
     <module>jobs/routes/gg_0.1</module>
     <module>jobs/process/testcloudrun_0.2</module>
+    <module>jobs/process/testcloudrun_0.3</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
