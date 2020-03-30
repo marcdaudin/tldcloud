@@ -37,19 +37,19 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_STATCATCHER_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_LOGCATCHER_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_METERCATCHER_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
@@ -61,13 +61,13 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_FILES_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "DIRECTORY",
         "name" : "FILE_PATH",
-        "value" : "\"D:/SOLUTIONS/Talend-Studio-20190620_1446-V7.2.1/workspace/.metadata\"",
+        "value" : "\"D:/tld/cloud\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -91,7 +91,7 @@
         "show" : true,
         "field" : "ENCODING_TYPE",
         "name" : "ENCODING",
-        "value" : "ISO-8859-15",
+        "value" : "\"UTF-8\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -234,7 +234,7 @@
         "show" : true,
         "field" : "TECHNICAL",
         "name" : "ENCODING:ENCODING_TYPE",
-        "value" : "ISO-8859-15",
+        "value" : "UTF-8",
         "contextMode" : false
       }, {
         "show" : true,
