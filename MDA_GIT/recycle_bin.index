@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-04-30T18:27:47.134+0200">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-04-30T18:27:53.925+0200">
   <deletedFolders>Structures/HL52Schema/Elements/rfx.viapost</deletedFolders>
   <deletedFolders>Structures/HL52Schema/Elements</deletedFolders>
   <deletedFolders>Structures/HL52Schema</deletedFolders>
   <deletedItems id="_Sc6loIr9EeqXTLbqM-T3hA" path="HL52Schema/Elements/rfx.viapost" type="STRUCTURES"/>
+  <deletedItems id="_ScnqsIr9EeqXTLbqM-T3hA" path="" type="NAMESPACES"/>
 </recyclebin:RecycleBin>
