@@ -5,3 +5,4 @@ Namespace Containers,com.oaklandsw.base,order,4
 Reports,com.oaklandsw.base,order,7
 Sample Data,com.oaklandsw.base,order,6
 Structures,com.oaklandsw.base,order,0
+Structures/HL52Schema/Elements/rfx.viapost/HL52.xml,com.oaklandsw.base,references.0,Namespace Containers/HL52Schema.xml

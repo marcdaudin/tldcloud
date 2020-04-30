@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='220' id='1' V220='3' defaultNamespaceUri='http://Viapost.RFX' V1='4' name='HL52Schema' incarnation='13'>
+  <namespaceRoot t='221' id='2' V222='3' V1='4'>
+    <namespaceContainer t='220' idref='1'/>
+    <child t='222' id='3' V222='3' namespaceUri='http://Viapost.RFX' V1='4' name='default'>
+      <namespaceContainer t='220' idref='1'/>
+    </child>
+    <child t='222' id='4' V222='3' namespaceUri='http://schemas.microsoft.com/BizTalk/2003' V1='4' name='b'>
+      <namespaceContainer t='220' idref='1'/>
+    </child>
+    <child t='222' id='5' V222='3' namespaceUri='http://www.w3.org/2001/XMLSchema' V1='4' name='xs'>
+      <namespaceContainer t='220' idref='1'/>
+    </child>
+    <child t='222' id='6' V222='3' namespaceUri='http://www.w3.org/2001/XMLSchema-instance' V1='4' name='xsi'>
+      <namespaceContainer t='220' idref='1'/>
+    </child>
+  </namespaceRoot>
+</root>
