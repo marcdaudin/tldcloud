@@ -11,7 +11,7 @@
   <groupId>org.example.mda_git.route</groupId>
   <artifactId>gg</artifactId>
   <version>0.1.0</version>
-  <name>MDA_GIT gg-0.1.0 (0.1,Routes) Bundle</name>
+  <name>MDA_GIT gg-${project.version} (0.1,Routes) Bundle</name>
   <properties>
     <item.name>@ItemName@</item.name>
     <bundle.config.export.service>@BundleConfigExportService@</bundle.config.export.service>
@@ -26,7 +26,7 @@
     <provided.lib.path>${current.bundle.resources.dir}/provided-lib</provided.lib.path>
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
-    <talend.product.version>7.2.1.20190909_1200_patch</talend.product.version>
+    <talend.product.version>7.3.1.20200219_1130</talend.product.version>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -40,7 +40,7 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <talend.job.version>0.1</talend.job.version>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
-    <talend.job.path>mda_git/gg_0_1</talend.job.path>
+    <talend.job.path>mda_git</talend.job.path>
     <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
     <talend.pigudf.groupid>org.example.mda_git.pigudf</talend.pigudf.groupid>
@@ -59,12 +59,12 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>camel-core-2.23.1</artifactId>
+      <artifactId>camel-core-2.24.2</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>camel-spring-2.23.1</artifactId>
+      <artifactId>camel-spring-2.24.2</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -73,9 +73,9 @@
       <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>dom4j</groupId>
+      <groupId>org.dom4j</groupId>
       <artifactId>dom4j</artifactId>
-      <version>1.6.1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>log4j</groupId>
@@ -83,9 +83,24 @@
       <version>1.2.17</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-to-slf4j</artifactId>
+      <version>2.12.1</version>
+    </dependency>
+    <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
-      <version>6.0.0</version>
+      <version>7.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.25</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -110,7 +125,12 @@
     <dependency>
       <groupId>org.example.mda_git.code</groupId>
       <artifactId>routines</artifactId>
-      <version>7.2.1</version>
+      <version>7.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.mda_git.bean</groupId>
+      <artifactId>beans</artifactId>
+      <version>7.3.1</version>
     </dependency>
   </dependencies>
   <build>
@@ -316,41 +336,6 @@
       <properties>
         <microservice.running.configs.dir>${current.resources.dir}/</microservice.running.configs.dir>
       </properties>
-    </profile>
-    <profile>
-      <id>deploy-nexus</id>
-      <activation>
-        <property>
-          <name>altDeploymentRepository</name>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-deploy-plugin</artifactId>
-            <version>2.7</version>
-            <executions>
-              <execution>
-                <id>deploy-file</id>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>deploy-file</goal>
-                </goals>
-                <configuration>
-                  <file>${basedir}/src/main/resources/feature/feature.xml</file>
-                  <groupId>${project.groupId}</groupId>
-                  <artifactId>${talend.job.name}-feature</artifactId>
-                  <version>${project.version}</version>
-                  <classifier>features</classifier>
-                  <packaging>xml</packaging>
-                  <repositoryId>${project.distribution-management.repository.id}</repositoryId>
-                  <url>${project.distribution-management.repository.url}</url>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
     </profile>
   </profiles>
 </project>

@@ -12,7 +12,7 @@
   <artifactId>gg-feature</artifactId>
   <version>0.1.0</version>
   <packaging>pom</packaging>
-  <name>MDA_GIT gg-0.1.0 (0.1,Routes) Feature</name>
+  <name>MDA_GIT gg-${project.version} (0.1,Routes) Feature</name>
   <properties>
     <item.name>@ItemName@</item.name>
     <bundle.config.export.service>@BundleConfigExportService@</bundle.config.export.service>
@@ -27,7 +27,7 @@
     <provided.lib.path>${current.bundle.resources.dir}/provided-lib</provided.lib.path>
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
-    <talend.product.version>7.2.1.20190909_1200_patch</talend.product.version>
+    <talend.product.version>7.3.1.20200219_1130</talend.product.version>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -41,7 +41,7 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <talend.job.version>0.1</talend.job.version>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
-    <talend.job.path>mda_git/gg_0_1</talend.job.path>
+    <talend.job.path>mda_git</talend.job.path>
     <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
     <talend.pigudf.groupid>org.example.mda_git.pigudf</talend.pigudf.groupid>
@@ -56,13 +56,13 @@
     <plugins>
       <plugin>
         <groupId>org.apache.karaf.tooling</groupId>
-        <artifactId>features-maven-plugin</artifactId>
-        <version>2.2.9</version>
+        <artifactId>karaf-maven-plugin</artifactId>
+        <version>4.2.4</version>
         <executions>
           <execution>
             <id>create-kar</id>
             <goals>
-              <goal>create-kar</goal>
+              <goal>kar</goal>
             </goals>
             <configuration>
               <finalName>gg_0_1</finalName>
@@ -73,11 +73,21 @@
         </executions>
       </plugin>
       <plugin>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>2.7</version>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
+        <groupId>org.talend.ci</groupId>
+        <artifactId>osgihelper-maven-plugin</artifactId>
+        <version>7.3.1</version>
+        <executions>
+          <execution>
+            <id>feature-helper</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <featuresFile>${basedir}/src/main/bundle-resources/feature.xml</featuresFile>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
@@ -112,41 +122,4 @@
       </plugin>
     </plugins>
   </build>
-  <profiles>
-    <profile>
-      <id>deploy-nexus</id>
-      <activation>
-        <property>
-          <name>altDeploymentRepository</name>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-deploy-plugin</artifactId>
-            <version>2.7</version>
-            <executions>
-              <execution>
-                <id>deploy-file</id>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>deploy-file</goal>
-                </goals>
-                <configuration>
-                  <file>${basedir}/src/main/bundle-resources/feature.xml</file>
-                  <groupId>org.example.mda_git.route</groupId>
-                  <artifactId>gg-feature</artifactId>
-                  <version>0.1.0</version>
-                  <classifier>features</classifier>
-                  <packaging>xml</packaging>
-                  <repositoryId>${project.distributionManagement.repository.id}</repositoryId>
-                  <url>${project.distributionManagement.repository.url}</url>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 </project>
