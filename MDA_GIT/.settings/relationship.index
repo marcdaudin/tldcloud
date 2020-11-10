@@ -5,10 +5,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "UPLOG_TALEND_CLOUD:_hVhMgB-FEeu_2uW-Y--gOA",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
     "id" : "_Pf3VINbtEeqiC-B3jrh1Sw",
     "version" : "Latest",
     "type" : "mapper"
