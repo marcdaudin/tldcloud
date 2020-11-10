@@ -22,7 +22,7 @@
     <module>jobs/process/Examples/getweather_0.1</module>
     <module>jobs/routes/poc_esb_smartbox_route_0.1</module>
     <module>jobs/process/Examples/sayhello_0.1</module>
-    <module>jobs/process/JOBS_TEST_POC_ESB/copy_of_poc_esb_smartbox_test2_0.1</module>
+    <module>jobs/process/JOBS_TEST_POC_ESB/poc_esb_smartbox_test2_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>

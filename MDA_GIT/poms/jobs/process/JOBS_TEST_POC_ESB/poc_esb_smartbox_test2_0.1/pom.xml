@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.mda_git.job</groupId>
-  <artifactId>Copy_of_PoC_esb_smartbox_test2</artifactId>
+  <artifactId>PoC_esb_smartbox_test2</artifactId>
   <version>0.1.0</version>
-  <name>MDA_GIT Copy_of_PoC_esb_smartbox_test2-0.1.0 (0.1,Jobs)</name>
+  <name>MDA_GIT PoC_esb_smartbox_test2-0.1.0 (0.1,Jobs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -24,7 +24,7 @@
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>MDA_GIT</talend.project.name>
     <talend.product.version>7.3.1.20200219_1130</talend.product.version>
-    <talend.job.finalName>copy_of_poc_esb_smartbox_test2_0_1</talend.job.finalName>
+    <talend.job.finalName>poc_esb_smartbox_test2_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.mda_git.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.mda_git.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,7 +33,7 @@
     <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>Copy_of_PoC_esb_smartbox_test2</talend.job.name>
+    <talend.job.name>PoC_esb_smartbox_test2</talend.job.name>
     <talend.job.id>_ISzJ4CM-EeuBOJcX0Adtzw</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.folder>jobs_test_poc_esb/</talend.job.folder>
