@@ -10,8 +10,8 @@
   </parent>
   <groupId>org.example.mda_git.job</groupId>
   <artifactId>TestCloudRun</artifactId>
-  <version>0.3.0</version>
-  <name>MDA_GIT TestCloudRun-0.3.0 (0.3,Jobs)</name>
+  <version>0.3.1</version>
+  <name>MDA_GIT TestCloudRun-0.3.1 (0.3,Jobs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
