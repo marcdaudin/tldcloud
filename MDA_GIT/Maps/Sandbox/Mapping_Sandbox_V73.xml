@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/Sandbox/Input.xml' outStruct='Structures/Sandbox/Outpout.xml' inputRep='173' outputRep='183' nextMap='' inputStructUserName='Input' outputStructUserName='Outpout' V1='4' name='Mapping_Sandbox_V73' incarnation='2351'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='237' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='179' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Loop'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='36' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' startOffset='5' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ElementA'>
+        <mapNode t='190' idref='1'/>
+        <delimInitiator>A</delimInitiator>
+        <delimTerminator>\n</delimTerminator>
+        <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='36' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code'>
+          <mapNode t='190' idref='1'/>
+        </child>
+      </child>
+      <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='75' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' startOffset='5' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ElementB'>
+        <mapNode t='190' idref='1'/>
+        <delimInitiator>B</delimInitiator>
+        <delimTerminator>\n</delimTerminator>
+        <child t='200' id='9' V200='8' input='true' structElemExists='true' usedCount='36' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='5' maxSize='5' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Label'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='35' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Nb'>
+          <mapNode t='190' idref='1'/>
+        </child>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='11' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop(in$/root,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/root/Loop,{Filter},{Sort Keys},{Contexts})))</loop>
+    <child t='200' id='12' V200='8' structElemExists='true' usedCount='36' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Code'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/root/Loop/ElementA/Code</value>
+    </child>
+    <child t='200' id='13' V200='8' structElemExists='true' usedCount='36' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Label'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/root/Loop/ElementB/Label</value>
+    </child>
+    <child t='200' id='25' V200='8' structElemExists='true' usedCount='17' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='nb'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/root/Loop/ElementB/Nb</value>
+    </child>
+    <child t='200' id='26' V200='8' structElemExists='true' usedCount='17' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='nbTotal'>
+      <mapNode t='190' idref='1'/>
+      <value>AgSum(in$/root/Loop/ElementB/Nb(SimpleLoop(in$/root,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/root/Loop,{Filter},{Sort Keys},{Contexts})))))</value>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='693' id='33' V693='1' newLineType='2' delimiter=',' structName='Structures/Sandbox/Input.xml' V690='1' padOutput='true' trimInput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='706' id='34' V706='1' defaultHeader='Col' delimiter=';' quoteCharacter='"' quoteMode='4' newLineType='2' newLine='&#xD;&#xA;' V690='1' encoding='UTF-8'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='35' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <outputXmlRepRuntime t='692' id='36' V692='1' V690='1'>
+  </outputXmlRepRuntime>
+  <child t='165' id='2' V1='4' name='Document Bindings'>
+    <child t='166' id='19' V166='5' docType='1' docReposPath='/MDA_GIT/Sample Data/Sandbox/Input/Input.pos' V1='4' name='in$/root'>
+      <elemNode t='200' idref='4'/>
+    </child>
+    <child t='166' id='20' V166='5' docType='2' V1='4' name='out$/root'>
+      <elemNode t='200' idref='11'/>
+    </child>
+  </child>
+  <child t='201' id='3' V1='4' name='Inherits From'>
+  </child>
+</root>

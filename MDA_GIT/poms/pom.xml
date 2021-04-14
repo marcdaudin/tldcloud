@@ -24,6 +24,11 @@
     <module>jobs/process/Examples/sayhello_0.1</module>
     <module>jobs/process/JOBS_TEST_POC_ESB/poc_esb_smartbox_test2_0.1</module>
     <module>jobs/process/JOBS_TEST_POC_ESB/poc_esb_smartbox_test3_0.1</module>
+    <module>jobs/joblets/Common/ContextManagement/printcontexttolog_0.1</module>
+    <module>jobs/joblets/Common/ContextManagement/loadcontext_0.1</module>
+    <module>jobs/process/Common/ContextManagement/encryptvalue_contextvariable_0.1</module>
+    <module>jobs/joblets/Common/ContextManagement/loadcontextfrommysqldb_0.1</module>
+    <module>jobs/joblets/Common/ContextManagement/loadcontextfromfile_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
