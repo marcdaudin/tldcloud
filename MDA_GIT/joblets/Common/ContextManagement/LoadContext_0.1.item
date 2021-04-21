@@ -17,8 +17,8 @@
       <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="/opt/talend/contextmanagement"/>
       <contextParameter comment="Task Name or Id for loading Context File" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
       <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
-      <contextParameter comment="password for cryptographic file" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:V6HvfqxLyvulMbF6gg81HoqVGP4lXtPnDB6yYkxEUkw="/>
-      <contextParameter comment="file path for crytographic" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/TempTalend/password&quot;"/>
+      <contextParameter comment="password for cryptographic file" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:sPpc58slStG5uOgoPD5O5pwQBPnxsPp77qelponzaIY="/>
+      <contextParameter comment="file path for crytographic" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/TempTalend/test/encryption.properties&quot;"/>
     </context>
     <context confirmationNeeded="false" name="Test">
       <contextParameter comment="Context Storage Type to read from (File or DB)." name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;File&quot;"/>
@@ -37,8 +37,8 @@
       <contextParameter comment="Database Password" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_Password" value=""/>
       <contextParameter comment="Database Hostname" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
       <contextParameter comment="Database schema" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-      <contextParameter comment="password for cryptographic file" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:NpLVdhwK3vOBpKjlWuNIbOr0mPCMUWdjAtdgOjtTppQ="/>
-      <contextParameter comment="file path for crytographic" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/TempTalend/password&quot;"/>
+      <contextParameter comment="password for cryptographic file" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:h5uw3Xxsa3jikBRubTIGMiculyECDG7p5bDg7L9wzks="/>
+      <contextParameter comment="file path for crytographic" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/TempTalend/test/encryption.properties&quot;"/>
     </context>
     <context confirmationNeeded="false" name="Dev">
       <contextParameter comment="String to specify any additional JDBC Connection parameters" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
@@ -57,8 +57,8 @@
       <contextParameter comment="Print Context Variable Values (Password always hidden by default)" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
       <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true"/>
       <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/&quot;"/>
-      <contextParameter comment="password for cryptographic file" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:2thOe+Nk6iaZ3SRb6A0T8f0fRrFueaHaaaCegOplx5I="/>
-      <contextParameter comment="file path for crytographic" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/TempTalend/password&quot;"/>
+      <contextParameter comment="password for cryptographic file" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:L7PW0gPjSytuMUMujXP+mz7YG6nFSktJSqOLgLQBvuk="/>
+      <contextParameter comment="file path for crytographic" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/TempTalend/test/encryption.properties&quot;"/>
     </context>
     <parameters>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -104,7 +104,7 @@
       <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:lYJPSq0kKqoRJhWmCDdLsVXp3buade08J7G/PSZY"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:gBpQa/Y7RRawGFwYyGpfSpbunQ254m8gsjjn6eqN"/>
       <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -417,13 +417,13 @@
     </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0199c686-a0ad-4121-8cec-16dadc8e42da"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MG/uSZYfYLGC0OSwp/m1t9+29Tm8/NYJzD0pLfb6n5L70Ny1lrH3An/JbyF+1s1DVFa90Lkma+xk
-bVrdAM2ILg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3f5e1dd6-577d-4148-bedf-1417b8d4c819"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mXAyb/mrCeY0Y37+QbGtZrpqhiuiPduW+r840SrDwn5STHljf2Dy98ltKoybwFlRcsCRomY/Jd/M
-aDHa6tth6w==</DigestValue></Reference></SignedInfo><SignatureValue>CrYwOkErBkLlEqYubrcQgyVyBMH13WsyIusiZz9oAjpO2MfFudSIj+14YTDY4nPXZs+OkmXiePYv
-dFGx5DaEnMqbt/i0yvO6U5IDwlI63DJ+0bExlFnX4YowaPFA+AsTolzUW5SeGF7TZrFNJfCQhUze
-Mkna7ZlBFdRrI5m67Zf+wZYFjC3pUe2aTxRjk66l0YNmntTIZxxcDPC1sVb8tet+bpkJ42knHlNj
-vIAKehHRtmYym/Q1+9k4IH5NDhwb7U+BCLucOgie17KzCQPvk5eJner4e54j9nnvwhhErzIL9mXn
-HlpzebBq2f69a97vYVwi+qvaxdO7zbpwgv1RBw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1eba5076-6c68-4f72-8132-c8509a7786f1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>29YzD9/E76ODu/YoqiIgudVNYoonvTgMSYzy9Nhk6LU0xowDfbj93h6LdozqO9DXtpCXjaB+IAC5
+oCMHbILIAA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_649a9384-7e1d-4876-9bde-2b40179e0028"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YOYHez4/7nIZWLPGogTpI0KVt4ZfFsTgzQBFl2gA9SVAQ6HkHh4tTip2rukQ7lznKRb7jv/lOHls
+iFIbzahSow==</DigestValue></Reference></SignedInfo><SignatureValue>NFUP4sL39ZX0DIZ1L5FuZOAYKA7BT9sGe7VJHI6z6EtY69Bvs/SGkv1U8Ipjv+r8d5rDIU4N1ynI
+zBPXJeoPzUPb4+sG7OQoPeBBe7w0MyhIA7FseKdqjijziXjoq3Pu6SRHuMNDcPxdapMrg5Nr3szU
+plFsgp4eQBEUnOk64kvaGN9siYfwPc7/mh++3ECsaVfZgdy1z5XeVvC8YJ8BQ/6nKwlqUFvaaP5f
+TMLY+gmL5JtWT4oZ4mCrJ6INr3y+0L9lTSC2BJcEjiWJYSPTl5Sggzdu9a6jMkg1gxqZ9+wvUAaz
+ptqEEBcWA3y1efADopExWrnoKjY76fG9DHGbgQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -445,4 +445,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3f5e1dd6-577d-4148-bedf-1417b8d4c819" Target="#_0199c686-a0ad-4121-8cec-16dadc8e42da"><Timestamp>2021-04-19 12:01:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_649a9384-7e1d-4876-9bde-2b40179e0028" Target="#_1eba5076-6c68-4f72-8132-c8509a7786f1"><Timestamp>2021-04-21 15:34:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
