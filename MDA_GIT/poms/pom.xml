@@ -31,6 +31,7 @@
     <module>jobs/joblets/Common/ContextManagement/loadcontextfromfile_0.1</module>
     <module>jobs/process/Common/ContextManagement/testr_0.1</module>
     <module>jobs/process/Common/ContextManagement/encrypt_contexts_0.1</module>
+    <module>jobs/process/wh_job_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
